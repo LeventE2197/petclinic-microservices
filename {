@@ -1,0 +1,232 @@
+Script started on 2020-12-27 16:41:53+0000
+                    MVN_VERSION=sh(script:'. ${WORKSPACE}/spring-petclinic-admin-server/target/maven-archiver/pom.properties && echo $version', returnStdout:true).trim()
+                    env.IMAGE_TAG_ADMIN_SERVER="${ECR_REGISTRY}/${APP_REPO_NAME}:admin-server-qa-v${MVN_VERSION}-b${BUILD_NUMBER}"
+                    MVN_VERSION=sh(script:'. ${WORKSPACE}/spring-petclinic-api-gateway/target/maven-archiver/pom.properties && echo $version', returnStdout:true).trim()
+                    env.IMAGE_TAG_API_GATEWAY="${ECR_REGISTRY}/${APP_REPO_NAME}:api-gateway-qa-v${MVN_VERSION}-b${BUILD_NUMBER}"
+                    MVN_VERS]0;ec2-user@jenkins-server:~/petclinic-microservices[?1034h[ec2-user@jenkins-server petclinic-microservices]$                     MVN_VERSION=sh (script:'. ${WORKSPACE}/spring-petclinic-admin-server/target/maven-archiver/pom.prope rties && echo $version', returnStdout:true).trim()
+bash: syntax error near unexpected token `('
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     env.IMAGE_TAG_ ADMIN_SERVER="${ECR_REGISTRY}/${APP_REPO_NAME}:admin-server-qa-v${MVN_VERSION}-b${BUI LD_NUMBER}"
+fig-server/target/maven-archiver/pom.properties &&bash: env.IMAGE_TAG_ADMIN_SERVER=/:admin-server-qa-v-b: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     MVN_VERSION=sh (script:'. ${WORKSPACE}/spring-petclinic-api-gateway/target/maven-archiver/pom.proper ties && echo $version', returnStdout:true).trim()
+bash: syntax error near unexpected token `('
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     env.IMAGE_TAG_ API_GATEWAY="${ECR_REGISTRY}/${APP_REPO_NAME}:api-gateway-qa-v${MVN_VERSION}-b${BUILD _NUMBER}"
+bash: env.IMAGE_TAG_API_GATEWAY=/:api-gateway-qa-v-b: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     MVN_VERSION=sh (script:'. ${WORKSPACE}/spring-petclinic-config-server/target/maven-archiver/pom.prop erties && echo $version', returnStdout:true).trim()
+bash: syntax error near unexpected token `('
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     env.IMAGE_TAG_ CONFIG_SERVER="${ECR_REGISTRY}/${APP_REPO_NAME}:config-server-qa-v${MVN_VERSION}-b${B UILD_NUMBER}"
+bash: env.IMAGE_TAG_CONFIG_SERVER=/:config-server-qa-v-b: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     MVN_VERSION=sh (script:'. ${WORKSPACE}/spring-petclinic-customers-service/target/maven-archiver/pom. properties && echo $version', returnStdout:true).trim()
+bash: syntax error near unexpected token `('
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     env.IMAGE_TAG_ CUSTOMERS_SERVICE="${ECR_REGISTRY}/${APP_REPO_NAME}:customers-service-qa-v${MVN_VERSI ON}-b${BUILD_NUMBER}"
+bash: env.IMAGE_TAG_CUSTOMERS_SERVICE=/:customers-service-qa-v-b: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     MVN_VERSION=sh (script:'. ${WORKSPACE}/spring-petclinic-discovery-server/target/maven-archiver/pom.p roperties && echo $version', returnStdout:true).trim()
+bash: syntax error near unexpected token `('
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     env.IMAGE_TAG_ DISCOVERY_SERVER="${ECR_REGISTRY}/${APP_REPO_NAME}:discovery-server-qa-v${MVN_VERSION }-b${BUILD_NUMBER}"
+bash: env.IMAGE_TAG_DISCOVERY_SERVER=/:discovery-server-qa-v-b: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     MVN_VERSION=sh (script:'. ${WORKSPACE}/spring-petclinic-hystrix-dashboard/target/maven-archiver/pom. properties && echo $version', returnStdout:true).trim()
+bash: syntax error near unexpected token `('
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     env.IMAGE_TAG_ HYSTRIX_DASHBOARD="${ECR_REGISTRY}/${APP_REPO_NAME}:hystrix-dashboard-qa-v${MVN_VERSI ON}-b${BUILD_NUMBER}"
+bash: env.IMAGE_TAG_HYSTRIX_DASHBOARD=/:hystrix-dashboard-qa-v-b: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     MVN_VERSION=sh (script:'. ${WORKSPACE}/spring-petclinic-vets-service/target/maven-archiver/pom.prope rties && echo $version', returnStdout:true).trim()
+bash: syntax error near unexpected token `('
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     env.IMAGE_TAG_ VETS_SERVICE="${ECR_REGISTRY}/${APP_REPO_NAME}:vets-service-qa-v${MVN_VERSION}-b${BUI LD_NUMBER}"
+bash: env.IMAGE_TAG_VETS_SERVICE=/:vets-service-qa-v-b: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     MVN_VERSION=sh (script:'. ${WORKSPACE}/spring-petclinic-visits-service/target/maven-archiver/pom.pro perties && echo $version', returnStdout:true).trim()
+bash: syntax error near unexpected token `('
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     env.IMAGE_TAG_ VISITS_SERVICE="${ECR_REGISTRY}/${APP_REPO_NAME}:visits-service-qa-v${MVN_VERSION}-b$ {BUILD_NUMBER}"
+bash: env.IMAGE_TAG_VISITS_SERVICE=/:visits-service-qa-v-b: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     env.IMAGE_TAG_ GRAFANA_SERVICE="${ECR_REGISTRY}/${APP_REPO_NAME}:grafana-service"
+bash: env.IMAGE_TAG_GRAFANA_SERVICE=/:grafana-service: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                     env.IMAGE_TAG_ PROMETHEUS_SERVICE="${ECR_REGISTRY}/${APP_REPO_NAME}:prometheus-service"
+bash: env.IMAGE_TAG_PROMETHEUS_SERVICE=/:prometheus-service: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                 }
+bash: syntax error near unexpected token `}'
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$             }
+bash: syntax error near unexpected token `}'
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$         }
+bash: syntax error near unexpected token `}'
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$         stage('Build App Docker Im ages') {
+bash: syntax error near unexpected token `'Build App Docker Images''
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$             steps {
+bash: steps: command not found
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                 echo 'Building App  Dev Images'
+Building App Dev Images
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                 sh ". ./jenkins/bu ild-qa-docker-images-for-ecr.sh"
+sh: . ./jenkins/build-qa-docker-images-for-ecr.sh: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                 sh 'docker image l s'
+sh: docker image ls: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$             }
+bash: syntax error near unexpected token `}'
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$         }
+bash: syntax error near unexpected token `}'
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$         stage('Push Images to ECR  Repo') {
+bash: syntax error near unexpected token `'Push Images to ECR Repo''
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$             steps {
+bash: steps: command not found
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                 echo "Pushing ${AP P_NAME} App Images to ECR Repo"
+Pushing  App Images to ECR Repo
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                 sh ". ./jenkins/pu sh-qa-docker-images-to-ecr.sh"
+sh: . ./jenkins/push-qa-docker-images-to-ecr.sh: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$             }
+bash: syntax error near unexpected token `}'
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$         }
+bash: syntax error near unexpected token `}'
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$         stage('Deploy App on Docke r Swarm'){
+bash: syntax error near unexpected token `'Deploy App on Docker Swarm''
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$             steps {
+bash: steps: command not found
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                 echo 'Deploying Ap p on Swarm'
+Deploying App on Swarm
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$                 sh '. ./ansible/sc ripts/deploy_app_on_qa_environment.sh'
+sh: . ./ansible/scripts/deploy_app_on_qa_environment.sh: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$             }
+bash: syntax error near unexpected token `}'
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$         }
+bash: syntax error near unexpected token `}'
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$     }
+bash: syntax error near unexpected token `}'
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$     post {
+bash: post: command not found
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$         always {
+bash: always: command not found
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$             echo 'Deleting all loc al images'
+Deleting all local images
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$             sh 'docker image prune  -af'
+sh: docker image prune -af: No such file or directory
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$         }
+bash: syntax error near unexpected token `}'
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$     }
+bash: syntax error near unexpected token `}'
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ }git commit -m 'added jenkinsfile  petclinic-weekly-qa for release branch'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs}git commit -m 'added jenkinsfile [1@p[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu}git commit -m 'added jenkinsfile[1@ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd}git commit -m 'added jenkinsfil[1@e[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co}git commit -m 'added jenkinsfi[1@l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C }git commit -m 'added jenkinsf[1@i[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C^C
+
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ suoc^C
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ clear
+[3J[H[2J]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ sudo git commit -m 'added jenkinsf ile petclinic-weekly-qa for release branch'
+[feature/msp-21 e50361f] added jenkinsfile petclinic-weekly-qa for release branch
+ 1 file changed, 73 insertions(+)
+ create mode 100644 jenkins/petclinic-weekly-qa
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ sudo git push --set-upstream origi n feature/msp-21
+[KEnumerating objects: 6, done.
+[KCounting objects:  16% (1/6)[KCounting objects:  33% (2/6)[KCounting objects:  50% (3/6)[KCounting objects:  66% (4/6)[KCounting objects:  83% (5/6)[KCounting objects: 100% (6/6)[KCounting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+[KCompressing objects:  25% (1/4)[KCompressing objects:  50% (2/4)[KCompressing objects:  75% (3/4)[KCompressing objects: 100% (4/4)[KCompressing objects: 100% (4/4), done.
+[KWriting objects:  25% (1/4)[KWriting objects:  50% (2/4)[KWriting objects:  75% (3/4)[KWriting objects: 100% (4/4)[KWriting objects: 100% (4/4), 1.44 KiB | 1.44 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+remote: 
+remote: Create a pull request for 'feature/msp-21' on GitHub by visiting:[K
+remote:      https://github.com/LeventE2197/petclinic-microservices/pull/new/feature/msp-21[K
+remote: 
+To https://github.com/LeventE2197/petclinic-microservices.git
+ * [new branch]      feature/msp-21 -> feature/msp-21
+Branch 'feature/msp-21' set up to track remote branch 'feature/msp-21' from 'origin'.
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ sudo git checkout dev
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ git merge feature/msp-21[1@s[1@u[1@d[1@o[1@ 
+Updating fdb3d26..e50361f
+Fast-forward
+ ansible/playbooks/pb_deploy_app_on_qa_environment.yaml |  17 [32m+++[m
+ ansible/scripts/deploy_app_on_qa_environment.sh        |   5 [32m+[m
+ docker-compose-swarm-qa.yml                            | 178 [32m++++++++++++++++++++++[m
+ git                                                    |   0
+ .../build-and-deploy-petclinic-on-qa-env-manually.sh   |  22 [32m+++[m
+ jenkins/build-qa-docker-images-for-ecr.sh              |  10 [32m++[m
+ jenkins/petclinic-weekly-qa                            |  73 [32m+++++++++[m
+ jenkins/prepare-tags-ecr-for-qa-docker-images.sh       |  18 [32m+++[m
+ jenkins/push-qa-docker-images-to-ecr.sh                |  11 [32m++[m
+ 9 files changed, 334 insertions(+)
+ create mode 100644 ansible/playbooks/pb_deploy_app_on_qa_environment.yaml
+ create mode 100644 ansible/scripts/deploy_app_on_qa_environment.sh
+ create mode 100644 docker-compose-swarm-qa.yml
+ create mode 100644 git
+ create mode 100644 jenkins/build-and-deploy-petclinic-on-qa-env-manually.sh
+ create mode 100644 jenkins/build-qa-docker-images-for-ecr.sh
+ create mode 100644 jenkins/petclinic-weekly-qa
+ create mode 100644 jenkins/prepare-tags-ecr-for-qa-docker-images.sh
+ create mode 100644 jenkins/push-qa-docker-images-to-ecr.sh
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ git push origin dev[1@s[1@u[1@d[1@o[1@ 
+To https://github.com/LeventE2197/petclinic-microservices.git
+ [31m! [rejected]       [m dev -> dev (fetch first)
+[31merror: failed to push some refs to 'https://github.com/LeventE2197/petclinic-microservices.git'
+[m[33mhint: Updates were rejected because the remote contains work that you do[m
+[33mhint: not have locally. This is usually caused by another repository pushing[m
+[33mhint: to the same ref. You may want to first integrate the remote changes[m
+[33mhint: (e.g., 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ sudo git fetch 
+remote: Enumerating objects: 1, done.[K
+remote: Counting objects: 100% (1/1)[Kremote: Counting objects: 100% (1/1), done.[K
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0[K
+[KUnpacking objects: 100% (1/1)[KUnpacking objects: 100% (1/1), done.
+From https://github.com/LeventE2197/petclinic-microservices
+   fdb3d26..1b96db8  dev        -> origin/dev
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ sudo git fetch push origin dev
+To https://github.com/LeventE2197/petclinic-microservices.git
+ [31m! [rejected]       [m dev -> dev (non-fast-forward)
+[31merror: failed to push some refs to 'https://github.com/LeventE2197/petclinic-microservices.git'
+[m[33mhint: Updates were rejected because the tip of your current branch is behind[m
+[33mhint: its remote counterpart. Integrate the remote changes (e.g.[m
+[33mhint: 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ sudo git fetch dev
+fatal: 'dev' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ dug [K[K[K[Ksudo git fetch
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ sudo git fetch dev[6@push origin[C[C[C[C
+To https://github.com/LeventE2197/petclinic-microservices.git
+ [31m! [rejected]       [m dev -> dev (non-fast-forward)
+[31merror: failed to push some refs to 'https://github.com/LeventE2197/petclinic-microservices.git'
+[m[33mhint: Updates were rejected because the tip of your current branch is behind[m
+[33mhint: its remote counterpart. Integrate the remote changes (e.g.[m
+[33mhint: 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ sudo git checek[K[Kkout[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit branch
+[?1h=* [32mdev[m[m
+  feature/msp-11[m[m
+  feature/msp-13[m[m
+  feature/msp-15[m[m
+  feature/msp-16[m[m
+  feature/msp-17[m[m
+  feature/msp-18[m[m
+  feature/msp-19[m[m
+  feature/msp-20[m[m
+  feature/msp-21[m[m
+  master[m[m
+  release[m[m
+[K[?1l>]0;ec2-user@jenkins-server:~/petclinic-microservices[ec2-user@jenkins-server petclinic-microservices]$ sudo git pull
+CONFLICT (add/add): Merge conflict in jenkins/prepare-tags-ecr-for-qa-docker-images.sh
+Auto-merging jenkins/prepare-tags-ecr-for-qa-docker-images.sh
+hint: Waiting for your editor to close the file... [?1049h[?1h=[?2004h[1;28r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[28;1H[97m[41mE325: ATTENTION[m
+Found a swap file by the name "/home/ec2-user/petclinic-microservices/.git/.MERGE_MS
+[27;85HG[28;1H.swp"
+[10Cowned by: root   dated: Sun Dec 27 15:33:02 2020
+[9Cfile name: /home/ec2-user/petclinic-microservices/.git/MERGE_MSG
+[10Cmodified: YES
+[9Cuser name: root   host name: jenkins-server
+[8Cprocess ID: 15365 (STILL RUNNING)
+While opening file "/home/ec2-user/petclinic-microservices/.git/MERGE_MSG"
+[13Cdated: Sun Dec 27 16:44:52 2020
+      NEWER than swap file!
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/ec2-user/petclinic-microser
+[27;85Hv[28;1Hices/.git/MERGE_MSG"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/ec2-user/petclinic-microser
+[27;85Hv[28;1Hices/.git/.MERGE_MSG.swp"
+    to avoid this message.
+
+[?2004l[?2004h[27;1H"/home/ec2-user/petclinic-microservices/.git/MERGE_MSG" 6L, 312C
+[32mPress ENTER or type command to continue[?25h[m[1;1H[23L[?25l[1;1HMerge branch 'dev' of https://github.com/LeventE2197/petclinic-microservices into dev[2;1H# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+[94m~                                                                                    [8;1H~                                                                                    [9;1H~                                                                                    [10;1H~                                                                                    [11;1H~                                                                                    [12;1H~                                                                                    [13;1H~                                                                                    [14;1H~                                                                                    [15;1H~                                                                                    [16;1H~                                                                                    [17;1H~                                                                                    [18;1H~                                                                                    [19;1H~                                                                                    [20;1H~                                                                                    [21;1H~                                                                                    [22;1H~                                                                                    [23;1H~                                                                                    [24;1H~                                                                                    [25;1H~                                                                                    [26;1H~                    
